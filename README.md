@@ -11,6 +11,8 @@ python calibrate.py [-W WIDTH] [-H HEIGHT]
                     data_path: Path to the directory containing images and intrinsics.json
 ```
 
+`-W` and `-H` are the number of rows - 1 and columns - 1 of the chessboard. This is because only the inner grids are used for detection.
+
 ## Data Format
 Place the captured images in a folder. Each image must be named as `{camera_id}.png`, where `camera_id` is a unique id for each camera. 
 
