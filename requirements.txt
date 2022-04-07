@@ -1,0 +1,5 @@
+vispy
+numpy
+opencv-python
+matplotlib
+scipy
