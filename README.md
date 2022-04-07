@@ -18,7 +18,7 @@ Create `instrinsics.json` which contains a list of camera IDs and their camera i
 
 ```
 {
-	camera_id_1: [fx, fy, ppx, ppy],
+    camera_id_1: [fx, fy, ppx, ppy],
     camera_id_2: [fx, fy, ppx, ppy]
 }
 ```
