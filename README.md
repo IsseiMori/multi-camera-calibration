@@ -3,11 +3,12 @@
 ## Usage
 ```
 python calibrate.py [-W WIDTH] [-H HEIGHT]
-                    [--grid_length] data_path
+                    [--grid_length] [--debug] data_path
 
                     -W: Number of rows - 1 
                     -H: Number of columns - 1 
                     --grid_length: Length of a single grid
+                    --debug: Option to turn on debug messages and render the result
                     data_path: Path to the directory containing images and intrinsics.json
 ```
 
