@@ -373,6 +373,7 @@ class Calibration(object):
         f0 = self.fun(x0, n_cameras, n_points, camera_indices, point_indices, points_2d, c_intrinsics)
 
         if self.debug:
+            print("Mean error before optimization ", f0.mean())
             plt.plot(f0)
 
         A = self.bundle_adjustment_sparsity(n_cameras, n_points, camera_indices, point_indices)
@@ -384,6 +385,7 @@ class Calibration(object):
 
 
         if self.debug:
+            print("Mean error after optimization ", res.fun.mean())
             plt.plot(res.fun)
             plt.savefig(os.path.join(self.data_dir, 'debug/errors_opt.png'))
 
